@@ -1,0 +1,102 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px auto;
+    max-width: 1200px;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Comfortaa', cursive;
+}
+
+.item__card{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 310px;
+    width: 250px;
+    margin: 20px ;
+    border: 1px solid rgba(255, 250, 250, 0.281);
+    border-radius: 15px;
+    overflow: hidden;
+    color: #fff;
+    transition: 0.2s linear;
+    cursor: pointer;
+    
+}
+.item__img{
+   position: absolute;
+   max-height: 250px;
+   max-width: 250px;
+   transform: translate(-50%);
+   -webkit-mask: url(../../img/cardshadow.webp) top left/contain;
+   transition: linear 0.2s;
+
+}
+
+.item__title{
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%);
+    bottom: 37px;
+    width: 200px;
+    transition: 0.3s;
+}
+
+.item__price{
+    position: absolute;
+    transform: translate(-50%);
+    bottom: 10px;
+    color: rgb(211, 252, 225);
+    font-size: larger
+    
+}
+
+.item__card:hover{
+    transform: scale(1.03); 
+}
+
+.item__card:hover .item__img{
+    filter: blur(3px);
+    
+}
+
+.item__btn{
+    position: absolute;
+    display: flex;
+    top: 35%;
+    transform: translateX(-50%);
+    font-size: 22px;
+    border-radius: 15px;
+    border: none;
+    background-color: rgb(201, 162, 238);
+    font-weight: 700;
+    opacity: 0;
+    transition: 0.2s;
+    cursor: pointer;
+    font-family: 'Comfortaa', cursive;
+    padding: 5px;
+
+}
+
+.item__btn:hover{
+    transform:translateX(-50%) scale(1.1);
+    background-color: rgb(233, 180, 65);
+
+}
+
+.item__card:hover .item__btn{
+    opacity: 1;
+}
+
+::placeholder
+{
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+
+}
+
+@media (width < 880px){
+    .container{
+        justify-content: center;
+    }
+}

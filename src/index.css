@@ -5,9 +5,13 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: rgb(5,15,19);
+  background: radial-gradient(circle, rgba(45,26,101,1) 0%, rgba(23,23,23,1) 100%);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Comfortaa&display=swap');
+
